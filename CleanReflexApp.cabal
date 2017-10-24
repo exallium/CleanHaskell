@@ -1,0 +1,23 @@
+name:                CleanReflexApp
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/exallium/CleanReflexApp#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Alex Hart
+maintainer:          alex.hart658@gmail.com
+copyright:           Copyright: (c) 2016 Alex Hart
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable CleanReflexApp
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , transformers >= 0.5.2.0 && < 0.6
+                     , random >= 1.1 && < 1.2
+  other-modules:       App.Data, App.Domain, App.Entities, App.Repositories, App.State
